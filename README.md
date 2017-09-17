@@ -15,6 +15,9 @@
 <a href='http://jenkins.cherubits.hu/job/lordoftheflies/django-jupyter-integration/master'><img src='http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master'></a>
 
 [!http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master!|http://jenkins.cherubits.hu/job/lordoftheflies/django-jupyter-integration/master]
+
+![](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master)
+
 # Django Jupyter integration
 ### Features
 
