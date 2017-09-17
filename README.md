@@ -1,5 +1,4 @@
 [![Build Status](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master)](http://jenkins.cherubits.hu/job/lordoftheflies/django-jupyter-integration/master)
-[[image:http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master>>http://jenkins.cherubits.hu/job/lordoftheflies/job/django-jupyter-integration/job/master/||target='__new']]
 
 # Django Jupyter integration
 ### Features
