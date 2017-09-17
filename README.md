@@ -1,4 +1,4 @@
-![](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png)
+![http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png)
 
 # Django Jupyter integration
 ### Features
