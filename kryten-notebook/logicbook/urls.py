@@ -18,5 +18,5 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'notebook/(?P<notebook_name>\w+)/$', view=views.notebook_index, name='index'),
+    url(r'logicbook/(?P<logicbook_name>\w+)/$', view=views.logicbook_index, name='index'),
 ]

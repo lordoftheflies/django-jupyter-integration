@@ -1,5 +1,6 @@
 include LICENSE.txt
 include README.rst
-recursive-include notebook/static *
-recursive-include notebook/templates *
-recursive-include docs *
+include requirements.txt
+recursive-include logicbook/static *
+recursive-include logicbook/templates *
+recursive-include logicbook/docs *

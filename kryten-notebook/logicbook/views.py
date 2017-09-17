@@ -10,13 +10,13 @@ def get_notebook_path(filename):
 
 
 # Create your views here.
-def notebook_index(request, notebook_name):
-    with open(get_notebook_path(notebook_name)) as ff:
+def notebook_index(request, logicbook_name):
+    with open(get_notebook_path(logicbook_name)) as ff:
         from nbconvert.preprocessors import ExecutePreprocessor
         import nbformat
         from nbconvert import HTMLExporter
         from nbconvert.preprocessors.execute import CellExecutionError
-        src_notebook = nbformat.reads(ff.read(), as_version=4)  # where ff is file opened with some open("path to notebook file")
+        src_notebook = nbformat.reads(ff.read(), as_version=4)  # where ff is file opened with some open("path to logicbook file")
 
         ep = ExecutePreprocessor(timeout=50, kernel_name='python3')
         ep.preprocess(src_notebook, {})
@@ -33,13 +33,13 @@ def notebook_index(request, notebook_name):
         return HttpResponse(body)
 
 
-def already_generated_notebook(request, notebook_name):
-    with open(get_notebook_path(notebook_name)) as ff:
+def already_generated_notebook(request, logicbook_name):
+    with open(get_notebook_path(logicbook_name)) as ff:
         from nbconvert.preprocessors import ExecutePreprocessor
         import nbformat
         from nbconvert import HTMLExporter
         from nbconvert.preprocessors.execute import CellExecutionError
-        src_notebook = nbformat.reads(ff.read(), as_version=4)  # where ff is file opened with some open("path to notebook file")
+        src_notebook = nbformat.reads(ff.read(), as_version=4)  # where ff is file opened with some open("path to logicbook file")
 
         html_exporter = HTMLExporter()
         html_exporter.template_file = 'basic'  # basic will skip generating body and html tags.... use "all" to gen all..
