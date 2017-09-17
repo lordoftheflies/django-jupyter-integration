@@ -25,7 +25,8 @@ deactivate
     stage('Build') {
       steps {
         sh '''. ./venv/bin/activate
-python kryten-notebook/setup.py sdist develop
+cd kryten-notebook
+python setup.py sdist develop
 deactivate
 '''
         }
@@ -33,11 +34,12 @@ deactivate
     stage('Test') {
       steps {
         sh '''. ./venv/bin/activate
-python -m unittest discover kryten-notebook/tests/ -p '*_test.py'
+cd kryten-notebook
+python -m unittest discover ./tests/ -p '*_test.py'
 deactivate
 '''
         sh '''. ./venv/bin/activate
-cd scrapersite
+cd kryten-notebook
 python manage.py test --no-input
 deactivate
 '''
@@ -46,7 +48,8 @@ deactivate
     stage('Deploy staging') {
       steps {
         sh '''. ./venv/bin/activate
-python kryten-notebook/setup.py sdist install
+cd kryten-notebook
+python setup.py sdist install
 deactivate
 '''
       }
@@ -66,7 +69,8 @@ deactivate
     stage('Distribute') {
       steps {
         sh '''. ./venv/bin/activate
-python kryten-notebook/setup.py sdist upload -r local
+cd kryten-notebook
+python setup.py sdist upload -r local
 deactivate
 '''
 
