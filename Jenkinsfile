@@ -35,11 +35,11 @@ deactivate
       steps {
         sh '''. ./venv/bin/activate
 cd kryten-notebook
-python -m unittest discover ./tests/ -p '*_test.py'
+python -m unittest discover tests -p '*_test.py'
 deactivate
 '''
         sh '''. ./venv/bin/activate
-cd kryten-notebook
+cd pocsite
 python manage.py test --no-input
 deactivate
 '''
