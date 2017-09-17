@@ -1,7 +1,6 @@
+![http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png)
+
 # Django Jupyter integration
-
-Simple Django application which could handle Jupyter notebooks.
-
 ### Features
 
 - Display Jupyter notebook as a Django view
