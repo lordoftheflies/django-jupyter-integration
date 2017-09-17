@@ -1,6 +1,4 @@
-![http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png)
-
-![https://raw.githubusercontent.com/lordoftheflies/django-jupyter-integration/master/coverage.svg](./coverage.svg)
+![http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png](http://jenkins.cherubits.hu/buildStatus/icon?job=lordoftheflies/django-jupyter-integration/master&.png) ![https://raw.githubusercontent.com/lordoftheflies/django-jupyter-integration/master/coverage.svg](./coverage.svg)
 
 # Django Jupyter integration
 ### Features
