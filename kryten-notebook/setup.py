@@ -4,6 +4,10 @@ from distutils.util import convert_path
 from pip.req import parse_requirements
 from setuptools import find_packages, setup
 
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
+
 # ========================================
 # Parse requirements for all configuration
 # ========================================
@@ -22,8 +26,6 @@ ver_path = convert_path('notebook/version.py')
 with open(ver_path) as ver_file:
     exec(ver_file.read(), main_ns)
 
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='kryten-notebook',
