@@ -24,7 +24,7 @@ deactivate
       }
     stage('Build') {
       steps {
-        sh '''. ./env/bin/activate
+        sh '''. ./venv/bin/activate
 python kryten-notebook/setup.py sdist develop
 deactivate
 '''
@@ -65,7 +65,7 @@ deactivate
     }
     stage('Distribute') {
       steps {
-        sh '''. ./env/bin/activate
+        sh '''. ./venv/bin/activate
 python kryten-notebook/setup.py sdist upload -r local
 deactivate
 '''
